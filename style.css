@@ -1,0 +1,30 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+body {
+   display: grid;
+   place-items: center;
+   width: 100vw;
+   height: 100vh;
+   background-color: #0a0a1d;
+}
+.main {
+   width: 200px;
+   height: 200px;
+   background-color: #1b1a34;
+   display: grid;
+   place-items: center;
+   perspective: 1000px;
+}
+.center {
+   width: 170px;
+   height: 170px;
+   background-color: #b6d30d;
+   transition: 3s;
+}
+.center:hover {
+   transform: rotatey(-500deg) translateZ(200px);
+   /*transform: scaleZ(4) rotateX(60deg);*/
+}
